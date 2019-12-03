@@ -26,19 +26,19 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-String why = "https://pics.me.me/ji-believe-i-can-fly-cataddicisanony-amouse-i-believe-i-can-25038037.png";
+		String why = "https://pics.me.me/ji-believe-i-can-fly-cataddicisanony-amouse-i-believe-i-can-25038037.png";
 		// 2. create a variable of type "Component" that will hold your image
-Component ibf;
+		Component ibf;
 		// 3. use the "createImage()" method below to initialize your Component
-ibf=createImage(why);
+		ibf = createImage(why);
 		// 4. add the image to the quiz window
-quizWindow.add(ibf);
+		quizWindow.add(ibf);
 		// 5. call the pack() method on the quiz window
-
+		quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+JOptionPane.showInputDialog("what is grumpy cat's reaction. If you do not now what grumpy cat is then thats just sad");
 		// 7. print "CORRECT" if the user gave the right answer
-
+// search for pics grumpy cat i belive you are an idiot
 		// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the
