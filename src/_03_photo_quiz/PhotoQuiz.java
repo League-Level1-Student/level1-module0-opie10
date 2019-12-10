@@ -29,6 +29,8 @@ public class PhotoQuiz {
 		String why = "https://pics.me.me/ji-believe-i-can-fly-cataddicisanony-amouse-i-believe-i-can-25038037.png";
 		// 2. create a variable of type "Component" that will hold your image
 		Component ibf;
+		Component t;
+	
 		// 3. use the "createImage()" method below to initialize your Component
 		ibf = createImage(why);
 		// 4. add the image to the quiz window
@@ -36,14 +38,30 @@ public class PhotoQuiz {
 		// 5. call the pack() method on the quiz window
 		quizWindow.pack();
 		// 6. ask a question that relates to the image
-JOptionPane.showInputDialog("what is grumpy cat's reaction. If you do not now what grumpy cat is then thats just sad");
+		String answer = JOptionPane.showInputDialog("what is catnip cat food or cat candy");
 		// 7. print "CORRECT" if the user gave the right answer
-// search for pics grumpy cat i belive you are an idiot
-		// 8. print "INCORRECT" if the answer is wrong
+		if (answer.equals("cat candy")) {
+			t = createImage("https://pics.me.me/according-to-my-calculations-youre-awesome-memes-com-you-re-amazing-52831177.png");
+			
+			
+			JOptionPane.showMessageDialog(null, "Correct");
 
+		}
+		// 8. print "INCORRECT" if the answer is wrong
+		else {
+			t = createImage("https://i.pinimg.com/236x/2d/57/82/2d57828eb9a1247a955d50b3aa70d5e4.jpg");
+			
+			
+			JOptionPane.showMessageDialog(null, "Incorrect");
+
+		}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-
+		quizWindow.remove(ibf);
+		quizWindow.add(t);
+		quizWindow.pack();
+		
+		
 		// 10. find another image and create it (might take more than one line
 		// of code)
 
