@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 public class DrumKit implements MouseListener {
 
-	JLabel drumLabelWithImage;
+	JLabel cheet;
 
 	public void run() throws MalformedURLException {
 
@@ -31,39 +31,43 @@ JFrame reet = new JFrame();
 reet.setVisible(true);
 reet.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 3. Set the size of the frame
-reet.setSize(999999999, 999999999);
+reet.setSize(1920,2200);
 		// 4. Set the title of the frame
-
+reet.setTitle("yeet");
 		// 5. Make a JPanel variable and initialize it using "new JPanel().
-
+JPanel beet = new JPanel();
 		// 6. Add the panel to the frame. (The panel is invisible.)
-
+reet.add(beet);
 		// 7. Download an image of a drum from the Internet. Drop it into your
 		// Eclipse project under "default package".
 
 		// 8. Put the name of your image file in a String variable.
-
+String seet = "images-1.jpg";
+String parakeet = "images-2.jpg";
+String meet = "images-3.jpg";
+String jeet = "images.jpg";
 		// 9. Edit the next line to use your String variable
-		// drumLabelWithImage = createLabelImage(drumImageString);
+		cheet = createLabelImage(seet );
 
 		// 10. Add the image to the panel
-
-		// 11. Set the layout of the panel to "new GridLayout()"
+beet.add(cheet);
+		// 11. Set the layout of the panel to "new GridLayout()"type name = new type();
+beet.setLayout(new GridLayout());
 
 		// 12. call the pack() method on the frame. Run your program. Do you see
 		// your drum image?
-
+ reet.pack();
 		// 13. add this mouse listener to drumLabelWithImage
-
+ cheet.addMouseListener(this);
 		// 18. Add more images to make a drumkit. Remember to add this mouse
 		// listener to each one.
-
+ cheet = createLabelImage(parakeet );
 	}
 
 	public void mouseClicked(MouseEvent e) {
 		// 14. Print "mouse clicked" to the console. Run your program and watch
 		// the console to see when this is printed.
-
+System.out.println("mouse clicked");
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label
 														// that the mouse
 														// clicked on
@@ -76,7 +80,7 @@ reet.setSize(999999999, 999999999);
 
 		// 17. ...use the playSound method to play a drum sound. Test to see if
 		// it works
-
+playSound("drum.wav");
 	}
 
 	private JLabel createLabelImage(String fileName) throws MalformedURLException {
