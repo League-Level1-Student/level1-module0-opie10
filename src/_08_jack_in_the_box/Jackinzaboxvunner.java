@@ -1,8 +1,8 @@
 package _08_jack_in_the_box;
 
-public class jackinzaboxvunner {
+public class Jackinzaboxvunner {
 public static void main(String[] args) {
-	jackinzabox za = new jackinzabox();
+	Jackinzabox za = new Jackinzabox();
 	za.startza();
 }
 }
